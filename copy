@@ -1,0 +1,30 @@
+#!/bin/sh
+
+main()
+{
+    set -e
+    mkdir -p png
+    for id in "$@"
+    do
+        src="../texmonk/src/$id/$id.png"
+        dst="png/$id.png"
+        log Copying "$src" to "$dst" ...
+    done
+
+    repl=\
+'The content of this website has been generated from\
+<https:\/\/github.com\/susam\/texmonk>.'
+
+    log Rendering README.md ...
+    sed -e "s/repository/website/g; s/<!-- This README.*/$repl/" \
+        ../texmonk/README.md > README.md
+
+    log Done
+}
+
+log()
+{
+    printf '%s\n' "$*" >&2
+}
+
+main "$@"
