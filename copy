@@ -9,6 +9,7 @@ main()
         src="../texmonk/src/$id/$id.png"
         dst="png/$id.png"
         log Copying "$src" to "$dst" ...
+        cp "$src" "$dst"
     done
 
     repl=\

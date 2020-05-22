@@ -18,7 +18,6 @@ named `foo.tex`:
 \begin{document}
 Lorem ipsum
 \end{document}
-
 ```
 
 Then run this:
@@ -48,12 +47,32 @@ Example:
 \hello{world}                      % macro usage
 \#                                 % literal hash sign
 \end{document}
-
 ```
 
 ![LaTeX Example Screenshot 0002][IMG0002]
 
 [IMG0002]: https://opendocs.github.io/texmonk/png/0002.png
+
+
+## 0003
+
+In TeX and LaTeX, the dollar symbol delimits mathematics formulas. Use the
+escape sequence `\$` to typeset literal dollar symbol.
+
+Example:
+
+```tex
+\documentclass{article}
+\begin{document}
+Euler's identity: $ e^{i \pi} + 1 = 0 $.
+
+I have \$10.
+\end{document}
+```
+
+![LaTeX Example Screenshot 0003][IMG0003]
+
+[IMG0003]: https://opendocs.github.io/texmonk/png/0003.png
 
 
 License
