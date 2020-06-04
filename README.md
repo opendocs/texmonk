@@ -4,8 +4,72 @@ TeX Monk
 This website contains LaTeX examples used in the TeX Monk posts on
 Twitter at <https://twitter.com/texmonk>.
 
-The content of this website has been generated from
-<https://github.com/susam/texmonk>.
+The content of this website has been generated from <https://github.com/susam/texmonk>.
+
+
+## 0004
+
+In TeX and LaTeX, the percent sign starts a comment. Use the escape
+sequence `\%` to typeset literal percent sign.
+
+Example:
+
+```tex
+\documentclass{article}
+\begin{document}
+% This is a comment.
+
+This is 38% not a comment.
+
+This is 100\% not a comment.
+\end{document}
+```
+
+![LaTeX Example Screenshot 0004][IMG0004]
+
+[IMG0004]: https://opendocs.github.io/texmonk/png/0004.png
+
+
+## 0003
+
+In TeX and LaTeX, the dollar sign delimits mathematics formulas. Use the
+escape sequence `\$` to typeset literal dollar symbol.
+
+Example:
+
+```tex
+\documentclass{article}
+\begin{document}
+Euler's identity: $ e^{i \pi} + 1 = 0 $.
+
+I have \$10.
+\end{document}
+```
+
+![LaTeX Example Screenshot 0003][IMG0003]
+
+[IMG0003]: https://opendocs.github.io/texmonk/png/0003.png
+
+
+## 0002
+
+In TeX and LaTeX, the hash symbol denotes macro parameters, e.g., `#1`,
+`#2`, etc. Use the escape sequence `\#` to typeset literal hash symbol.
+
+Example:
+
+```tex
+\documentclass{article}
+\begin{document}
+\newcommand{\hello}[1]{hello, #1}  % #1 - macro parameter
+\hello{world}                      % macro usage
+\#                                 % literal hash sign
+\end{document}
+```
+
+![LaTeX Example Screenshot 0002][IMG0002]
+
+[IMG0002]: https://opendocs.github.io/texmonk/png/0002.png
 
 
 ## 0001
@@ -31,48 +95,6 @@ Open `foo.pdf` to see the output.
 ![LaTeX Example Screenshot 0001][IMG0001]
 
 [IMG0001]: https://opendocs.github.io/texmonk/png/0001.png
-
-
-## 0002
-
-In TeX and LaTeX, the hash symbol denotes macro parameters, e.g., `#1`,
-`#2`, etc. Use the escape sequence `\#` to typeset literal hash symbol.
-
-Example:
-
-```tex
-\documentclass{article}
-\begin{document}
-\newcommand{\hello}[1]{hello, #1}  % #1 - macro parameter
-\hello{world}                      % macro usage
-\#                                 % literal hash sign
-\end{document}
-```
-
-![LaTeX Example Screenshot 0002][IMG0002]
-
-[IMG0002]: https://opendocs.github.io/texmonk/png/0002.png
-
-
-## 0003
-
-In TeX and LaTeX, the dollar symbol delimits mathematics formulas. Use the
-escape sequence `\$` to typeset literal dollar symbol.
-
-Example:
-
-```tex
-\documentclass{article}
-\begin{document}
-Euler's identity: $ e^{i \pi} + 1 = 0 $.
-
-I have \$10.
-\end{document}
-```
-
-![LaTeX Example Screenshot 0003][IMG0003]
-
-[IMG0003]: https://opendocs.github.io/texmonk/png/0003.png
 
 
 License
